@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us | NewLife Gym</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="logo-link" href="index.html"
+          ><img class="link-logo" src="image/logo.png" alt="logo"
+        /></a>
+        <ul class="nav-ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#join-us" class="active">Join Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="join-us" class="join-us-section">
+      <div class="join-us-content">
+        <h2>Join NewLife Gym</h2>
+        <p>
+          Choose the membership that best fits your needs and fill out the form
+          below to get started. We'll be in touch to finalize your registration
+          and answer any questions you may have.
+        </p>
+
+        <form action="#" method="post" class="join-us-form">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="membership">Select Membership Plan:</label>
+          <select id="membership" name="membership" required>
+            <option value="basic">Basic - $50/month</option>
+            <option value="standard">Standard - $75/month</option>
+            <option value="premium">Premium - $100/month</option>
+            <option value="vip">VIP - $150/month</option>
+            <option value="elite">Elite - $200/month</option>
+          </select>
+
+          <label for="payment">Payment Method:</label>
+          <select id="payment" name="payment" required>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bank-transfer">Bank Transfer</option>
+          </select>
+
+          <label for="comments">Additional Comments:</label>
+          <textarea id="comments" name="comments" rows="4"></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
